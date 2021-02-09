@@ -13,10 +13,8 @@ int main(int argc, char const *argv[])
 	bool datos_correctos = false;
 
 	do{
-		printf("dame el numero de renglones: \n");
-		scanf("%d", &renglones);
-		printf("dame el numero de columnas: \n");
-		scanf("%d", &columnas);
+		printf("dame el numero de renglones y columnas: \n");
+		scanf("%d %d", &renglones, &columnas);
 		if(renglones >= 3 && renglones <= 51 && columnas >= 3 && columnas <= 51)
 			datos_correctos = true;
 		else{
