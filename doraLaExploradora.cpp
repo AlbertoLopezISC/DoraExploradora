@@ -72,7 +72,6 @@ int busquedaCamino(char **tablero, int n, int m){
 
 int busca(char **tablero, int x, int y, int n, int m){
 	tablero[x][y] = '#';
-	printf("%c\n",tablero[x][y] );
 		if(x-1 >= 0)
 			if(tablero[x-1][y] == '.')
 				busca(tablero, x-1, y, n, m);
